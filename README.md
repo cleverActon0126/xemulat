@@ -2,4 +2,4 @@
 - 👀 I’m interested in - Porgramming
 - 🌱 I’m currently learning - Python, and C
 - 💞️ I’m looking to collaborate on - 
-- 📫 How to reach me - xemulated#1571
+- 📫 How to reach me - =^•_•^= | xemulated#1337
