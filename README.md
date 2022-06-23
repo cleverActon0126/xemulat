@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @xemulat
-- 👀 I’m interested in - Programming
+- 👀 I’m interested in - Programming / Coding
 - 🌱 I’m currently learning - Python
 - 💞️ I’m looking to collaborate on - nothing
 - 📫 How to reach me - *=^•_•^= | xemulated#1337* (on discord)
