@@ -1,3 +1,4 @@
+- 🍞 Quarter-Stack developer
 - 🌱 I’m currently learning - Python
 - 📫 How to reach me - *xemulated#2137* (on discord)
 - 💻 Incredibly Influential Programmer (IIP)
