@@ -1,6 +1,3 @@
 {
-  "redirects": [
-    { "source": "/downloads", "destination": "/downloads.html" },
-    { "source": "/pastes", "destination": "/pastes.html"}
-  ]
+  "cleanUrls": true
 }
