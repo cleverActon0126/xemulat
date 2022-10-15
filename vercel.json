@@ -1,5 +1,6 @@
 {
   "redirects": [
     { "source": "/downloads", "destination": "/downloads/index.html" },
-    { "source": "/pastes", "destination": "/pastes/index.html" ]
+    { "source": "/pastes", "destination": "/pastes/index.html"}
+  ]
 }
