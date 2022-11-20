@@ -1,238 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-US" style="background: black">
-  <head>
+<html>
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xemulated</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://advaith.io/fa/6.0.0-beta2/css/all.css">
-    <meta name="theme-color" content="#606cc5">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta property="og:title" content="Xemulated's Website">
-    <meta property="og:locale" content="en_US">
-    <meta name="description" content="piss off malko.">
-    <meta property="og:description" content="piss of malko.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@Xemulated">
-    <meta name="twitter:creator" content="@advaithj1">
-    <link rel="canonical" href="https://xemulat.vercel.app/">
-    <meta property="og:url" content="https://xemulat.vercel.app/">
+    <!--Excessive usage of Bulma, FontAwesome, and TailwindCSS --->
+    <!-- Some guy named Snitchy#2012 told me to use TailwindCSS... he isn't even a web dev... --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="preconnect" href="https://cdn.discordapp.com">
-    <link rel="dns-prefetch" href="https://cdn.discordapp.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://img.shields.io">
-    <link rel="dns-prefetch" href="https://img.shields.io">
-    <script src="webp.js"></script>
-
-    <script async src="https://raw.githubusercontent.com/xemulat/MyFilesForDDL/main/gtag.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-FQ6T8SL768');
-    </script>
-
-    <style>
-      strong {
-        color: hsl(0, 0%, 96%)
-      }
-      .no-webp div.hero-body {
-        background: url('https://ssl.gstatic.com/atari/images/level-header.png') center; background-size: cover
-      }
-      .webp div.hero-body {
-        background: url('https://cdn.discordapp.com/attachments/252296452708106240/655293406674944021/level-header.webp') center; background-size: cover
-      }
-      .header {
-        color: white;
-        background: linear-gradient(141deg,#009e6c 0,#00d1b2 71%,#00e7eb 100%) no-repeat;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .iheader .icon {
-        --fa-primary-color: #00e7eb;
-        --fa-secondary-color: #009e6c;
-        --fa-secondary-opacity: .9
-      }
-      .iiheader .icon {
-        --fa-primary-color: #009e6c;
-        --fa-secondary-color: #00e7eb;
-        --fa-primary-opacity: .7;
-        --fa-secondary-opacity: .9
-      }
-      .rounded {
-        border-radius: 5px
-      }
-      .advbottext {
-        color: white;
-        background-size: cover !important
-      }
-      .no-webp .advbottext {
-        background: url('https://advaithbot.xyz/files/background 512.jpg') no-repeat center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .webp .advbottext {
-        background: url('https://advaithbot.xyz/files/background 512.webp') no-repeat center;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .dcctext {
-        color: white;
-        background-size: cover !important;
-        background: #606cc5;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .deltext {
-        color: white;
-        background-size: cover !important;
-        background: #606cc5;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent
-      }
-      .hicon {
-        margin-right: .5px !important
-      }
-      a {
-        color: #209cee
-      }
-      a:hover {
-        color: #53d2ff
-      }
-      li a img {
-        vertical-align: sub
-      }
-      li a {
-        font-size: 17px
-      }
-      .text {
-        font-size: 18px
-      }
-      span.space {
-        width: 10px;
-        display: inline-block
-      }
-    </style>
+    <title>Xemulated's Site</title>
   </head>
-  <body class="has-text-white-ter">
-    <section class="hero is-medium is-primary is-bold">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title is-1">
-            <span class="header">
-              Xemulated's Website
-            </span>
-          </h1>
-          <div class="buttons is-centered">
-            <a target="_blank" rel="noopener" href="https://github.com/xemulat" class="button is-dark has-text-light" style="background: #333"><span class="icon hicon"><i class="fab fa-github"></i></span>Xemulat</a>
-            <a target="_blank" rel="noopener" href="https://discord.com/users/927441405079588914" class="button is-dark has-text-white" style="background: #5865F2"><span class="icon hicon"><i class="fab fa-discord"></i></span>xemulated#2622</a>
-            <a target="_blank" rel="noopener" href="https://reddit.com/u/Xemulated" class="button is-dark has-text-white" style="background: #ff4500"><span class="icon hicon"><i class="fab fa-reddit-alien"></i></span>u/Xemulated</a>
-          </div>
-          <div class="buttons is-centered">
-            <a target="_blank" rel="noopener" href="https://twitter.com/xemulat" class="button is-dark has-text-white" style="background: #1da1f2"><span class="icon hicon"><i class="fab fa-twitter"></i></span>@Xemulat</a>
-            <a target="_blank" rel="noopener" href="https://t.me/Xemulated" class="button is-dark has-text-white" style="background: #27a5e7"><span class="icon hicon"><i class="fab fa-telegram-plane"></i></span>@Xemulated</a>
-            <a target="_blank" rel="noopener" href="https://t.me/Xemulated" class="button is-dark has-text-white" style="background: #27a5e7"><span class="icon hicon"><i class="fab fa-telegram-plane"></i></span>@Xemulated</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <p class="text">
-          Hi! Welcome to my personal website!
-        </p>
-      </div><br>
-      <div class="container">
-        <h2 class="title has-text-white-ter is-2">
-          <span class="header">
-            <i class="fa-sharp fa-solid fa-rectangle-vertical-history"></i> Projects
-          </span>
-        </h2>
-        <p class="text">Stuff that I made, or helped make.</p>
-      </div><br>
-      <div class="container">
-      
-        <div class="content">
-          <ul>
-            <li><a href="https://github.com/xemulat/ReVancedPacker" target="_blank" rel="noopener">ReVancedPacker (deprecated)</a>
-            <li><a href="https://github.com/xemulat/XToolbox" target="_blank" rel="noopener">XToolbox</a>
-            <li><a href="https://github.com/xemulat/DEsH" target="_blank" rel="noopener">DEsH</a>
-            <li><a href="https://pypi.org/project/XeLib/" target="_blank" rel="noopener">XeLib</a>
-            <li><a href="https://raw.githubusercontent.com/xemulat/SomeStuffIMade/main/BetterZelk.css" target="_blank" rel="noopener">BetterZelk (BD&PC)</a>
-          </ul>
-        </div>
+  <body style="background-color:#1B1D1E" class="place-content-center">
+  <section class="section">
+    <center><div class="container">
+      <center><h1 style="color:#bbbbbb;" class="title">Xemulated</h1></center>
+      <br></br>
+      <!-- So Yeah basically my own shitty website, like fr, i spent over an hour on this section -->
+      <i style="color:#bbbbbb;" class="fa-solid fa-square-share-nodes"></i>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >Socials</strong>
+      </p>
 
-      <div class="container">
-        <h2 class="title has-text-white-ter is-2">
-          <span class="header">
-            <i class="fa-sharp fa-solid fa-sitemap"></i> Sites
-          </span>
-        </h2>
-        <p class="text">My sites, or mirrors to this site.</p>
-      </div><br>
-      <div class="container">
-      <div class="content">
-        <p>Mirrors to this site</p>
-        <ul>
-          <li><a href="https://ksenon.vercel.app/" target="_blank" rel="noopener">Ksenon</a>
-          <li><a href="https://xemu.vercel.app/" target="_blank" rel="noopener">Xemu</a>
-          <li><a href="https://xemulated.vercel.app/" target="_blank" rel="noopener">Xemulated</a>
-          <li><a href="https://xemul.vercel.app/" target="_blank" rel="noopener">Xemul</a>
-          <li><a href="https://ekstremalnypolskifemboy.vercel.app/" target="_blank" rel="noopener">EkstremalnyPolskiFemboy</a>
-          <li><a href="https://extremepolishfemboy.vercel.app/" target="_blank" rel="noopener">ExtremePolishFemboy</a>
-        </ul>
+      <a style="color:#ffffff;" href="https://www.reddit.com/user/Xemulated"><button class="button is-primary"><i class="fa-brands fa-reddit"></i></button></a>
+
+      <a style="color:#ffffff;" href="https://twitter.com/xemulat"><button class="button is-primary"><i class="fa-brands fa-twitter"></i></button></a>
+
+      <a style="color:#ffffff;" href="https://discord.com/users/927441405079588914"><button class="button is-primary"><i class="fa-brands fa-discord"></i></button></a>
+
+      <a style="color:#ffffff;" href="https://pettingzoo.co/@Xemulated"><button class="button is-primary"><i class="fa-brands fa-mastodon"></i></button></a>
+
+      <a style="color:#ffffff;" href="https://t.me/Xemulated"><button class="button is-primary"><i class="fa-brands fa-telegram"></i></button></a>
+
+    </div></center>
+  </section>
+
+  <section class="section">
+    <center><div class="container">
+      <i style="color:#bbbbbb;" class="fa-solid fa-code-compare"></i>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >GitHub Stats</strong></p>
+      <a style="color:#ffffff;" href="https://github.com/xemulat"><button class="button is-primary"><i class="fa-brands fa-github"></i></button></a>
+      <br></br>
+      <embed type="image/jpg" src="https://img.shields.io/github/followers/xemulat?style=flat-square">
+      &nbsp;
+      <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat?style=flat-square">
         
-        <p>Other sites I made</p>
-      </div>
+    </div></center>
+  </section>
 
-        
-        <p class="title is-5">
-        </p>
+  <section class="section">
+    <center><div class="container">
+      <i style="color:#bbbbbb;" class="fa-solid fa-diagram-project"></i>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >Projects</strong></p>
       
-        </div>
-      </div><br>
-      <div class="container">
-        <p><i class="fa-sharp fa-solid fa-code"></i> Build with HTML5, CSS and a little bit of JS</p>
-        <p><i class="fa-sharp fa-solid fa-font-awesome"></i> Icons powered by <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a></p>
-        <p><i class="fa-sharp fa-solid fa-badge-check"></i> Badges powered by <a href="https://shields.io" target="_blank" rel="noopener">Shields.io</a></p> 
-        <p><i class="fa-sharp fa-solid fa-v"></i> Hosted on <a href="https://vercel.app/" target="_blank" rel="noopener">Vercel</a></p><br>
+      <p style="color:#fdfdfd;">ReVanced Packer</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/revancedpacker/total?style=flat-square">
+        &nbsp;
+        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/revancedpacker?style=flat-square">
 
-        <p class="text">© 2022 Xemulated</p><br>
+      <br></br>
 
-        </a></p>
-      </div>
-    </section>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-        })
-      }
+      <p style="color:#fdfdfd;">XToolBox</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/XToolBox/total?style=flat-square">
+        &nbsp;
+        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/xtoolbox?style=flat-square">
 
-      window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault()
-      })
+      <br></br>
 
-      console.log(`Zamn,
-                   why are you here bruh
-                   You really shouldn't be here
-                   oh, ok
-                   https://www.youtube.com/watch?v=dQw4w9WgXcQ`)
-    </script>
+      <p style="color:#fdfdfd;">SomeStuffIMade</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/SomeStuffIMade/total?style=flat-square">
+        &nbsp;
+        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/SomeStuffIMade?style=flat-square">
+
+      <br></br>
+    </div></center>
+  </section>
+  <br></br><br></br><br></br>
+
+  <!--- Bottom of the screen ---->
+  <div style="position: relative">    
+
+    <div style="position: absolute; bottom: 5px">
+    <p><i class="fa-solid fa-gear"></i> CSS Framework by <a href="https://bulma.io">Bulma</a></p>
+    <p><i class="fa-solid fa-gear"></i> Text Framework by <a href="https://tailwindcss.com/">Tailwind</a></p>
+    <p><i class="fa-solid fa-font-awesome"></i> Icons by <a href="https://fontawesome.com/">FontAwesome</a></p>
+    </div>
+  </div>
+
   </body>
 </html>
