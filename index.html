@@ -7,6 +7,7 @@
     <!-- Some guy named Snitchy#2012 told me to use TailwindCSS... he isn't even a web dev... --->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!--- Embedding for Discord -->
@@ -14,9 +15,33 @@
     <meta content="Profit" property="og:description" />
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
+    <!-- Only this one custom style that i need for the scroll bar -->
+    <style>
+        html {
+        --scrollbarBG: #1B1D1E;
+        --thumbBG: #000000;
+        }
+        body::-webkit-scrollbar {
+        width: 11px;
+        }
+        body {
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+        }
+        body::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+        }
+        body::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG) ;
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+        }
+    </style>
+
     <!-- Title, like only title -->
     <title>Xemulated's Site</title>
   </head>
+
   <body style="background-color:#1B1D1E" class="place-content-center">
   <section class="section">
     <center><div class="container">
@@ -37,19 +62,19 @@
 
       <a style="color:#ffffff;" href="https://t.me/Xemulated"><button class="button is-primary"><i class="fa-brands fa-telegram"></i></button></a>
 
+      <a style="color:#ffffff;" href="https://github.com/xemulat"><button class="button is-primary"><i class="fa-brands fa-github"></i></button></a>
     </div></center>
   </section>
 
   <section class="section">
     <center><div class="container">
       <i style="color:#bbbbbb;" class="fa-solid fa-code-compare"></i>
-      <p class="subtitle"><strong style="color:#bbbbbb;" >GitHub Stats</strong></p>
-      <a style="color:#ffffff;" href="https://github.com/xemulat"><button class="button is-primary"><i class="fa-brands fa-github"></i></button></a>
-      <br></br>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >GitHub</strong></p>
+
       <embed type="image/jpg" src="https://img.shields.io/github/followers/xemulat?style=flat-square">
       &nbsp;
       <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat?style=flat-square">
-        
+
     </div></center>
   </section>
 
@@ -73,19 +98,60 @@
       <p style="color:#fdfdfd;">SomeStuffIMade</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/SomeStuffIMade/total?style=flat-square">
         &nbsp;
         <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/SomeStuffIMade?style=flat-square">
-
-      <br></br>
     </div></center>
   </section>
-  <br></br><br></br><br></br>
+
+  <section class="section">
+    <center><div class="container">
+      <i style="color:#bbbbbb;" class="fa-solid fa-boxes-packing"></i>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >Pypi Packages</strong></p>
+      
+      <strong><p style="color:#fdfdfd;">XeLib</p></strong>
+      <embed type="image/jpg" src="https://img.shields.io/pypi/dm/XeLib?style=flat-square">
+      
+        <p>&nbsp;</p>
+
+      <strong><p style="color:#fdfdfd;">XTLLib</p></strong>
+      <embed type="image/jpg" src="https://img.shields.io/pypi/dm/XTLLib?style=flat-square">
+
+    </div></center>
+  </section>
+
+  <section class="section">
+    <center><div class="container">
+      <i style="color:#bbbbbb;" class="fa-solid fa-share"></i>
+      <p class="subtitle"><strong style="color:#bbbbbb;" >I Got Featured In</strong></p>
+      
+      <strong><p style="color:#fdfdfd;">ReVancedPacker</p></strong>
+
+      <p>&nbsp;</p>
+      
+      <p style="color:#a8a8a8;"><a href="https://rootmygalaxy.net/build-and-download-revanced-apk-youtube-vanced-alternative/">rootmygalaxy.net</a></p>
+      <p style="color:#a8a8a8;"><a href="https://www.androidsage.com/2022/06/27/how-to-build-install-revanced-apk-in-one-click/"></a>androidsage.com</p>
+      <p style="color:#a8a8a8;"><a href="https://youtu.be/mU4M2m_cL7g">Velian Speaks Tech (YouTube)</a></p>
+      <p style="color:#a8a8a8;"><a href="https://namu.wiki/w/ReVanced">namu.wiki</a></p>
+      <p style="color:#a8a8a8;"><a href="https://br.atsit.in/pl/?p=316685">br.atsit.in</a></p>
+
+      <br></br>
+
+      <strong><p style="color:#fdfdfd;">XToolBox</p></strong>
+
+      <p>&nbsp;</p>
+      
+      <p style="color:#a8a8a8;"><a href="https://youtu.be/DL8VaNTqbW0?t=218">NotroDan (YouTube)</a></p>
+    </div></center>
+  </section>
 
   <!--- Bottom of the screen ---->
+  <br></br>
   <div style="position: relative">    
 
     <div style="position: absolute; bottom: 5px">
     <p><i class="fa-solid fa-gear"></i> CSS Framework by <a href="https://bulma.io">Bulma</a></p>
     <p><i class="fa-solid fa-gear"></i> Text Framework by <a href="https://tailwindcss.com/">Tailwind</a></p>
     <p><i class="fa-solid fa-font-awesome"></i> Icons by <a href="https://fontawesome.com/">FontAwesome</a></p>
+    <p><i class="fa-solid fa-v"></i> Build using <a href="https://vitejs.dev/">Vite</a></p>
+    <p><i class="fa-brands fa-osi"></i> This Website is Open-Source on <a href="https://github.com/xemulat/xemulat/blob/main/index.html">GitHub</a></p>
     </div>
   </div>
 
