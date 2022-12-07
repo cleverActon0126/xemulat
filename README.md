@@ -1,4 +1,4 @@
-- 🍞 Quarter-Stack developer
+- 🍞 Half-Stack developer
 - 🌱 I’m currently learning - Python
 - 🖥 Currently working on - Semicolon
 - 📫 How to reach me - *xemulated#2622* (on discord)
