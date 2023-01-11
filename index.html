@@ -3,9 +3,8 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Excessive usage of Bulma, FontAwesome, Devicons, and TailwindCSS --->
+    <!-- Excessive usage of Bulma, FontAwesome, and TailwindCSS --->
     <!-- Some guy named Snitchy#2012 told me to use TailwindCSS... he isn't even a web dev... --->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -41,8 +40,22 @@
         margin-top: 1.75px;
         margin-bottom: 1.75px;
         }
-    </style>
+        .center-container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        }
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .center-container img{
+        max-width:100px;
+        }
 
+    </style>
     <!-- Title, like only title -->
     <title>Xemulated's Site</title>
   </head>
@@ -51,47 +64,25 @@
   <section class="section">
     <center><div class="container">
       <center><h1 style="color:#bbbbbb;" class="title">Xemulated</h1></center>
+      &nbsp;
+      <div class="center-container">
+        <embed type="image/jpg" src="https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/status/927441405079588914?simple=true">&nbsp;
+        <embed type="image/jpg" src="https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/playing/927441405079588914">&nbsp;
+        <embed type="image/jpg" src="https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/vscode/927441405079588914">&nbsp;
+        <embed type="image/jpg" src="https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/spotify/927441405079588914">
+      </div>
 
   <section class="section">
-    <center><div class="container">
-      <p class="subtitle"><strong style="color:#bbbbbb;" >Socials</strong></p>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://www.reddit.com/user/Xemulated">
-          <i class="fa-brands fa-reddit">
-            </i></a></div>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://twitter.com/xemulat">
-          <i class="fa-brands fa-twitter">
-            </i></a></div>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://discord.com/users/927441405079588914">
-          <i class="fa-brands fa-discord">
-            </i></a></div>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://pettingzoo.co/@Xemulated">
-          <i class="fa-brands fa-mastodon">
-            </i></a></div>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://t.me/Xemulated">
-          <i class="fa-brands fa-telegram">
-            </i></a></div>
-
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://github.com/xemulat">
-          <i class="fa-brands fa-github">
-            </i></a></div>
-      
-      <div class="button is-primary flex-grid">
-        <a style="color:#ffffff;" href="https://www.youtube.com/@realrickastley/videos">
-          <i class="fa-brands fa-youtube"></i>
-            </i></a></div>
-
-    </div></center>
+    <center>
+      <div class="container">
+        <i style="color:#bbbbbb;" class="fa-solid fa-share-from-square"></i>
+        <p class="subtitle"><strong style="color:#bbbbbb;" >Socials</strong></p>
+        <a style="color: #ffffff;" href="https://discord.com/users/927441405079588914"> [Discord] </a>
+        <a style="color: #ffffff;" href="https://www.reddit.com/user/Xemulated"> [Reddit] </a>
+        <a style="color: #ffffff;" href="https://github.com/xemulat"> [GitHub] </a>
+        <a style="color: #ffffff;" href="https://twitter.com/xemulat"> [Twitter] </a>
+      </div>
+    </center>
   </section>
 
   <section class="section">
@@ -99,50 +90,7 @@
       <i style="color:#bbbbbb;" class="fa-solid fa-code"></i>
       <p class="subtitle"><strong style="color:#bbbbbb;" >Skills</strong></p>
 
-      <div class="button is-success is-primary flex-grid">
-          <a href="https://www.python.org/"><i class="fa-brands fa-python"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://docs.conda.io/en/latest/miniconda.html"><i class="devicon-anaconda-original"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://www.markdownguide.org/"><i class="devicon-markdown-original"></i></a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://html.com/"><i class="fa-brands fa-html5"></i></a>
-          
-      </div>
-
-      <div class="button is-warning is-primary flex-grid">
-
-        <a href="https://www.javascript.com/"><i class="fa-brands fa-js"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://www.w3.org/TR/CSS/#css"><i class="fa-brands fa-css3-alt"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://developer.android.com/studio/"><i class="devicon-androidstudio-plain"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://nodejs.org/en/"><i class="devicon-nodejs-plain"></i></a>
-      </div>
-
-      
-      <div class="button is-danger is-primary flex-grid">
-        <a href="https://go.dev/"><i class="fa-brands fa-golang"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://kotlinlang.org/"><i class="devicon-kotlin-plain"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://www.rust-lang.org/"><i class="devicon-rust-plain"></i></a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><i class="devicon-c-plain"></i></a>
-      </div>
-
-    </div></center>
-  </section>
-
-  <section class="section">
-    <center><div class="container">
-      <i style="color:#bbbbbb;" class="fa-solid fa-code-compare"></i>
-      <p class="subtitle"><strong style="color:#bbbbbb;" >GitHub</strong></p>
-
-      <embed type="image/jpg" src="https://img.shields.io/github/followers/xemulat?style=flat-square">
-      &nbsp;
-      <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat?style=flat-square">
+      <embed type="image/jpg" src="https://skillicons.dev/icons?i=html,css,js,vite,py,flutter,dart">
 
     </div></center>
   </section>
@@ -152,81 +100,13 @@
       <i style="color:#bbbbbb;" class="fa-solid fa-diagram-project"></i>
       <p class="subtitle"><strong style="color:#bbbbbb;" >Projects</strong></p>
       
-      <p style="color:#fdfdfd;">ReVanced Packer</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/revancedpacker/total?style=flat-square">
-        &nbsp;
-        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/revancedpacker?style=flat-square">
+      <a style="color:#fdfdfd;" src="https://github.com/xemulat/ReVancedPacker">ReVanced Packer</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/revancedpacker/total?style=flat-square">────<embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/revancedpacker?style=flat-square">
 
       <br></br>
 
-      <p style="color:#fdfdfd;">XToolBox</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/XToolBox/total?style=flat-square">
-        &nbsp;
-        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/xtoolbox?style=flat-square">
-
-      <br></br>
-
-      <p style="color:#fdfdfd;">SomeStuffIMade</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/SomeStuffIMade/total?style=flat-square">
-        &nbsp;
-        <embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/SomeStuffIMade?style=flat-square">
+      <a style="color:#fdfdfd;" src="https://github.com/xemulat/XToolbox">XToolBox</p> <embed type="image/jpg" src="https://img.shields.io/github/downloads/xemulat/XToolBox/total?style=flat-square">────<embed type="image/jpg" src="https://img.shields.io/github/stars/xemulat/xtoolbox?style=flat-square">
     </div></center>
   </section>
-
-  <section class="section">
-    <center><div class="container">
-      <i style="color:#bbbbbb;" class="fa-solid fa-boxes-packing"></i>
-      <p class="subtitle"><strong style="color:#bbbbbb;" >Pypi Packages</strong></p>
-      
-      <strong><p style="color:#fdfdfd;">XeLib</p></strong>
-      <embed type="image/jpg" src="https://img.shields.io/pypi/dm/XeLib?style=flat-square">
-      
-        <p>&nbsp;</p>
-
-      <strong><p style="color:#fdfdfd;">XTLLib</p></strong>
-      <embed type="image/jpg" src="https://img.shields.io/pypi/dm/XTLLib?style=flat-square">
-
-        <p>&nbsp;</p>
-
-      <strong><p style="color:#fdfdfd;">FerriteLib</p></strong>
-      <embed type="image/jpg" src="https://img.shields.io/pypi/dm/FerriteLib?style=flat-square">
-
-    </div></center>
-  </section>
-
-  <section class="section">
-    <center><div class="container">
-      <i style="color:#bbbbbb;" class="fa-solid fa-share"></i>
-      <p class="subtitle"><strong style="color:#bbbbbb;" >I Got Featured In</strong></p>
-      
-      <strong><p style="color:#fdfdfd;">ReVancedPacker</p></strong>
-
-      <p>&nbsp;</p>
-      
-      <p style="color:#a8a8a8;"><a href="https://rootmygalaxy.net/build-and-download-revanced-apk-youtube-vanced-alternative/">rootmygalaxy.net</a></p>
-      <p style="color:#a8a8a8;"><a href="https://www.androidsage.com/2022/06/27/how-to-build-install-revanced-apk-in-one-click/">androidsage.com</a></p>
-      <p style="color:#a8a8a8;"><a href="https://youtu.be/mU4M2m_cL7g">Velian Speaks Tech (YouTube)</a></p>
-      <p style="color:#a8a8a8;"><a href="https://namu.wiki/w/ReVanced">namu.wiki</a></p>
-      <p style="color:#a8a8a8;"><a href="https://br.atsit.in/pl/?p=316685">br.atsit.in</a></p>
-
-      <br></br>
-
-      <strong><p style="color:#fdfdfd;">XToolBox</p></strong>
-
-      <p>&nbsp;</p>
-      
-      <p style="color:#a8a8a8;"><a href="https://youtu.be/DL8VaNTqbW0?t=218">NotroDan (YouTube)</a></p>
-    </div></center>
-  </section>
-
-  <!--- Bottom of the screen ---->
-  <br></br>
-  <div style="position: relative">    
-
-    <p><i class="fa-solid fa-gear"></i> CSS Framework by <a href="https://bulma.io">Bulma</a></p>
-    <p><i class="fa-solid fa-gear"></i> Text Framework by <a href="https://tailwindcss.com/">Tailwind</a></p>
-    <p><i class="fa-solid fa-font-awesome"></i> Icons by <a href="https://fontawesome.com/">FontAwesome</a></p>
-    <p><i class="fa-solid fa-v"></i> Build using <a href="https://vitejs.dev/">Vite</a></p>
-    <p><i class="fa-brands fa-osi"></i> This Website is Open-Source on <a href="https://github.com/xemulat/xemulat/blob/main/index.html">GitHub</a></p>
-    </div>
-  </div>
 
   </body>
 </html>
