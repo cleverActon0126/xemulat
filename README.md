@@ -4,6 +4,8 @@
 
 💻 Site - [xemu.tk](https://xemu.tk)
 
+![](https://komarev.com/ghpvc/?username=xemulat)
+
 ![status](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/status/927441405079588914?simple=true)
 ![playing](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/playing/927441405079588914)
 ![vscode](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/vscode/927441405079588914)
