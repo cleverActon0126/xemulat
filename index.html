@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Excessive usage of Bulma, FontAwesome, and TailwindCSS --->
-    <!-- Some guy named Snitchy#2012 told me to use TailwindCSS... he isn't even a web dev... --->
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,51 +15,11 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
     <!-- Style for the scroll bar and div spacing for buttons -->
-    <style>
-        html {
-        --scrollbarBG: #1B1D1E;
-        --thumbBG: #000000;
-        }
-        body::-webkit-scrollbar {
-        width: 11px;
-        }
-        body {
-        scrollbar-width: thin;
-        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-        }
-        body::-webkit-scrollbar-track {
-        background: var(--scrollbarBG);
-        }
-        body::-webkit-scrollbar-thumb {
-        background-color: var(--thumbBG) ;
-        border-radius: 6px;
-        border: 3px solid var(--scrollbarBG);
-        }
-        div {
-        margin-top: 1.75px;
-        margin-bottom: 1.75px;
-        }
-        .center-container {
-        display: flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        }
-        .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-        .center-container img{
-        max-width:100px;
-        }
-
-    </style>
     <!-- Title, like only title -->
     <title>Xemulated's Site</title>
   </head>
 
-  <body style="background-color:#1B1D1E" class="place-content-center">
+  <body style="background-color:#1B1D1E cursor progress" class="place-content-center">
   <section class="section">
     <center><div class="container">
       <center><h1 style="color:#bbbbbb;" class="title">Xemulated</h1></center>
