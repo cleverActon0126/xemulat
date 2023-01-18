@@ -1,0 +1,51 @@
+html {
+    --scrollbarBG: #1B1D1E;
+    --thumbBG: #000000;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+div {
+    margin-top: 1.75px;
+    margin-bottom: 1.75px;
+}
+
+.center-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center-container img {
+    max-width: 100px;
+}
+
+body {
+    min-height: 100vh;
+    background: #111;
+    cursor: progress;
+}
